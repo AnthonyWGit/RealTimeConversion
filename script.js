@@ -1,5 +1,5 @@
 const textFormQuerySelector = document.querySelector("#converter")                      //**********
-const realTime = setInterval(converstionInFrancsPrep, 50)                                 //*Quick interval to scan the page to see if used started to put a number or not
+const realTime = setInterval(converstionInFrancsPrep, 1000)                                 //*Quick interval to scan the page to see if used started to put a number or not
 let auth = true                                                                         //*Weed need some kind of switch or else our output will be divided 
                                                                                         //*infinitly until it reaches 0
 let moneytoConvert = textFormQuerySelector.value    
@@ -11,7 +11,7 @@ function converstionInFrancsPrep()                                              
         moneytoConvert = textFormQuerySelector.value                                        
         if (isNaN(moneytoConvert) == true || moneytoConvert == "")                     //We check if user did put something or if it is a number
         {
-
+            textFormQuerySelector.value = "Feed me a number!"
         }
         else
         {
