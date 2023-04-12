@@ -36,5 +36,6 @@ function conversionInFrancs()
 }
 function roundTo(n, place)                                                            //Function used for rounding
 {    
-    return +(Math.round(n + "e+" + place) + "e-" + place);
+    return +(Math.round(n + "e+" + place) + "e-" + place)
+    //This means : return me the nb*100// This places the decimal point
 }
